@@ -68,7 +68,7 @@ body {
   transition: all 0.4s ease;
 }
 .right-side a:hover {
-  color: #c25c3f;
+  color: #c1593c;
 }
 .right-side h2 {
   font-size: 3.2rem;
@@ -187,6 +187,7 @@ body {
 .right-side #register-button {
   display: inline-block;
   width: 100%;
+  transition: all 0.4s ease;
   background-color: #E98265;
   padding: 1.4rem 3.2rem;
   cursor: pointer;
@@ -196,4 +197,7 @@ body {
   border: none;
   border-radius: 0.8rem;
   box-shadow: 0 0 1.6rem rgba(233, 130, 101, 0.587);
+}
+.right-side #register-button:hover {
+  background-color: #f39d85;
 }/*# sourceMappingURL=main.css.map */

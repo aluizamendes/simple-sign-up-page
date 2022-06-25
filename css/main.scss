@@ -1,8 +1,8 @@
 /* Variables */
 
 $primarySalmon: #E98265;
-$salmonDark: #c25c3f;
-$lightSalmon: #fbddd5;
+$salmonDark: #c1593c;
+$lightSalmon: #f39d85;
 $primaryPurple: #9983D8;
 $lightPurple: #ded8ef;
 $lightGrey: #d0d3d7;
@@ -241,8 +241,14 @@ body {
   #register-button {
     display: inline-block;
     width: 100%;
+    transition: all 0.4s ease;
 
     @include primaryButton;
+
+    &:hover {
+      background-color: $lightSalmon;
+    }
+
   }
 
 }
