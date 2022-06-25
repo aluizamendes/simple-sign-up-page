@@ -4,12 +4,54 @@ $primarySalmon: #E98265;
 $lightSalmon: #fbddd5;
 $primaryPurple: #9983D8;
 $lightPurple: #ded8ef;
+$lightGrey: #d0d3d7;
 
-$bodyTextColor: #575859;
+$bodyTextColor: #88898a;
 $darkTextColor: #323537;
 $labelTextColor: #9c9ea1;
 
+@mixin primaryButton {
+  background-color: $primarySalmon;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0px 2px 16px 0px $primarySalmon;  
+}
 
+@mixin socialButton {
+  background-color: #fff;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: $darkTextColor;
+  border: 0.1rem solid $lightGrey;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@mixin facebookButton {
+  background-color: #3b5998;
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+* { box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
@@ -17,7 +59,7 @@ html {
 }
 
 body {
-  background-color: #eff0f3;
+  background-color: #ffffff;
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
 }
@@ -70,6 +112,36 @@ body {
 .right-side {
   padding: 8.8rem;
 
+  a {
+    color: $primarySalmon;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: $darkTextColor
+  }
+
+  p {
+    color: $bodyTextColor;
+    padding: 1.6rem 0;
+  }
+
+  .sign-up-buttons {
+    padding-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #sign-up {
+    @include socialButton;
+  }
+
+  #sign-up-facebook {
+    @include facebookButton;
+  }
 
   form {
     display: flex;
