@@ -13,7 +13,7 @@
 </head>
 <body>
   <main>
-    <div class="wrapper">
+    <div class="page-container">
       <div class="grid-container">
         <div class="left-side">
           <div class="img-and-text">
@@ -23,25 +23,27 @@
           <img class="circle" src="img/circle.png" alt="">
         </div>
         <div class="right-side">
-          <h2>Get started.</h2>
-          <p>Already have an account? <a href="#">Log in</a></p>
-          <div class="sign-up-buttons">
-            <button id="sign-up"><img src="img/google-icon.png"> Sign up with Google</button>
-            <button id="sign-up-facebook"><img src="img/facebook-icon.svg" width="16px"> Sign up with facebook</button>
+          <div class="wrapper">
+            <h2>Get started.</h2>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <div class="sign-up-buttons">
+              <button id="sign-up"><img src="img/google-icon.png"> Sign up with Google</button>
+              <button id="sign-up-facebook"><img src="img/facebook-icon.svg" width="16px"> Sign up with facebook</button>
+            </div>
+            <p class="socials-divider"><span>or</span></p>
+            <form action="">
+              <label for="email">Email address</label>
+              <input type="email" name="email_address" class="icon-email" placeholder="exemple@gmail.com" id="email">
+              <label for="password">Password</label>
+              <input type="password" name="password" class="icon-password" placeholder="Your password" id="password">
+            </form>
+            <input type="checkbox" name="terms_of_service_and_privacy_policy">
+            <span class="terms-of-use-text">I agree to Plataform's
+              <a href="#">Terms of Service</a> and
+              <a href="#">Privacy Policy</a>
+            </span>
+            <button type="submit">Register</button>
           </div>
-          <span>or</span>
-          <form action="">
-            <label for="email">Email address</label>
-            <input type="email" name="email_address" placeholder="exemple@gmail.com" id="email">
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Your password" id="password">
-          </form>
-          <input type="checkbox" name="terms_of_service_and_privacy_policy">
-          <span class="terms-of-use-text">I agree to Plataform's 
-            <a href="#">Terms of Service</a> and 
-            <a href="#">Privacy Policy</a>
-          </span>
-          <button type="submit">Register</button>
         </div>    
       </div>
     </div>

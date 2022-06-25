@@ -14,9 +14,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.page-container {
+  height: 100vh;
+}
+
 .wrapper {
   margin-inline: auto;
-  /*width: min(90%,140rem);*/
+  width: min(90%, 50rem);
 }
 
 .grid-container {
@@ -54,7 +58,8 @@ body {
 }
 
 .right-side {
-  padding: 8.8rem;
+  display: flex;
+  align-items: center;
 }
 .right-side a {
   color: #E98265;
@@ -63,7 +68,7 @@ body {
 }
 .right-side h2 {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #323537;
 }
 .right-side p {
@@ -71,13 +76,13 @@ body {
   padding: 1.6rem 0;
 }
 .right-side .sign-up-buttons {
-  padding-top: 1.6rem;
+  padding-top: 2.4rem;
   display: flex;
   justify-content: space-between;
 }
 .right-side #sign-up {
   background-color: #fff;
-  padding: 1.4rem 2.4rem;
+  padding: 1.4rem 3.2rem;
   cursor: pointer;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -101,7 +106,67 @@ body {
   align-items: center;
   gap: 1rem;
 }
+.right-side .socials-divider {
+  text-align: center;
+  position: relative;
+  margin: 1.6rem 1.6rem;
+}
+.right-side .socials-divider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45%;
+  height: 0.1rem;
+  background-color: #d0d3d7;
+}
+.right-side .socials-divider::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 45%;
+  height: 0.1rem;
+  background-color: #d0d3d7;
+}
 .right-side form {
   display: flex;
   flex-direction: column;
+}
+.right-side form label {
+  color: #323537;
+  margin-bottom: 1rem;
+}
+.right-side form .icon-email {
+  padding-left: 4.8rem;
+  background-image: url("../img/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 1.6rem;
+  background-position-y: center;
+  background-size: 1.6rem;
+}
+.right-side form .icon-password {
+  padding-left: 4.8rem;
+  background-image: url("../img/password-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: 1.6rem;
+  background-position-y: center;
+  background-size: 1.6rem;
+}
+.right-side form input {
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  border: 0.1rem solid #d0d3d7;
+  margin-bottom: 3.2rem;
+  transition: all 0.4s ease;
+}
+.right-side form input:focus {
+  border: 0.1rem solid #E98265;
+  background-color: none;
+  outline: none;
+  box-shadow: 0 0 0.8rem rgba(233, 130, 101, 0.241);
 }/*# sourceMappingURL=main.css.map */
