@@ -19,7 +19,7 @@ $labelTextColor: #9c9ea1;
   color: #fff;
   border: none;
   border-radius: 0.8rem;
-  box-shadow: 0px 2px 16px 0px $primarySalmon;  
+  box-shadow: 0 0 1.6rem rgba(233, 130, 101, 0.587);
 }
 
 @mixin socialButton {
@@ -219,4 +219,24 @@ body {
       }
     }
   }
+
+  .agreement-check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 4.8rem;
+
+    span {
+      font-size: 1.4rem;
+      color: $bodyTextColor;
+    }
+  }
+
+  #register-button {
+    display: inline-block;
+    width: 100%;
+
+    @include primaryButton;
+  }
+
 }

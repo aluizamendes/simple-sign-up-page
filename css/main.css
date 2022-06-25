@@ -169,4 +169,27 @@ body {
   background-color: none;
   outline: none;
   box-shadow: 0 0 0.8rem rgba(233, 130, 101, 0.241);
+}
+.right-side .agreement-check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 4.8rem;
+}
+.right-side .agreement-check span {
+  font-size: 1.4rem;
+  color: #88898a;
+}
+.right-side #register-button {
+  display: inline-block;
+  width: 100%;
+  background-color: #E98265;
+  padding: 1.4rem 3.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1.6rem rgba(233, 130, 101, 0.587);
 }/*# sourceMappingURL=main.css.map */
