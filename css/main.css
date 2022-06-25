@@ -65,6 +65,10 @@ body {
   color: #E98265;
   font-weight: 500;
   text-decoration: none;
+  transition: all 0.4s ease;
+}
+.right-side a:hover {
+  color: #c25c3f;
 }
 .right-side h2 {
   font-size: 3.2rem;

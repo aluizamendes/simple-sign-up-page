@@ -1,6 +1,7 @@
 /* Variables */
 
 $primarySalmon: #E98265;
+$salmonDark: #c25c3f;
 $lightSalmon: #fbddd5;
 $primaryPurple: #9983D8;
 $lightPurple: #ded8ef;
@@ -120,6 +121,11 @@ body {
     color: $primarySalmon;
     font-weight: 500;
     text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+      color: $salmonDark;
+    }
   }
 
   h2 {
