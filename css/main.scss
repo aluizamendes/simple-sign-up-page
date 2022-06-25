@@ -1,8 +1,78 @@
 /* Variables */
 
 $primarySalmon: #E98265;
+$lightSalmon: #fbddd5;
 $primaryPurple: #9983D8;
+$lightPurple: #ded8ef;
 
 $bodyTextColor: #575859;
 $darkTextColor: #323537;
 $labelTextColor: #9c9ea1;
+
+
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #eff0f3;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  margin-inline: auto;
+  /*width: min(90%,140rem);*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.left-side {
+  background-color: $lightPurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.8rem;
+
+
+  .cart-illustration {
+    width: 580px;
+    margin: auto;
+    display: block;
+  }
+
+  .img-and-text {
+    h1 {
+      color: $darkTextColor;
+      text-align: center;
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 4rem;
+      width: 500px;
+      margin-inline: auto;
+    }
+  }
+
+  .circle {
+    width: 240px;
+    position: absolute;
+    left: -80px;
+    bottom: -150px;
+  }
+}
+
+.right-side {
+  padding: 8.8rem;
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}

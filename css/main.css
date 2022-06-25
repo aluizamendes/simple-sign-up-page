@@ -1,1 +1,58 @@
-/* Variables *//*# sourceMappingURL=main.css.map */
+/* Variables */
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #eff0f3;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin-inline: auto;
+  /*width: min(90%,140rem);*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.left-side {
+  background-color: #ded8ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.8rem;
+}
+.left-side .cart-illustration {
+  width: 580px;
+  margin: auto;
+  display: block;
+}
+.left-side .img-and-text h1 {
+  color: #323537;
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4rem;
+  width: 500px;
+  margin-inline: auto;
+}
+.left-side .circle {
+  width: 240px;
+  position: absolute;
+  left: -80px;
+  bottom: -150px;
+}
+
+.right-side {
+  padding: 8.8rem;
+}
+.right-side form {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */
