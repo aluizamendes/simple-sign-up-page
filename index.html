@@ -7,6 +7,7 @@
   <title>Login</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,11 +32,20 @@
               <button id="sign-up-facebook"><img src="img/facebook-icon.svg" width="16px"> Sign up with facebook</button>
             </div>
             <p class="socials-divider"><span>or</span></p>
+
             <form action="">
               <label for="email">Email address</label>
-              <input type="email" name="email_address" class="icon-email" placeholder="exemple@gmail.com" id="email">
+              <div class="email-input-container">
+                <i class="fi fi-rr-envelope icon-email"></i>
+                <input type="email" name="email_address" placeholder="exemple@gmail.com" id="email">
+              </div>
               <label for="password">Password</label>
-              <input type="password" name="password" class="icon-password" placeholder="Your password" id="password">
+
+              <div class="password-input-container">
+                <i class="fi fi-rr-lock icon-password"></i>
+                <input type="password" name="password" placeholder="Your password" id="password">
+              </div>
+
             </form>
 
             <div class="agreement-check">

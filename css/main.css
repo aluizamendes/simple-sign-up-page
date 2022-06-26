@@ -143,29 +143,32 @@ body {
   color: #323537;
   margin-bottom: 1rem;
 }
-.right-side form .icon-email {
-  padding-left: 4.8rem;
-  background-image: url("../img/email-icon.svg");
-  background-repeat: no-repeat;
-  background-position-x: 1.6rem;
-  background-position-y: center;
-  background-size: 1.6rem;
+.right-side form .email-input-container {
+  position: relative;
 }
-.right-side form .icon-password {
-  padding-left: 4.8rem;
-  background-image: url("../img/password-icon.svg");
-  background-repeat: no-repeat;
-  background-position-x: 1.6rem;
-  background-position-y: center;
-  background-size: 1.6rem;
+.right-side form .email-input-container .icon-email {
+  position: absolute;
+  top: 2rem;
+  left: 2.4rem;
+  color: #323537;
+}
+.right-side form .password-input-container {
+  position: relative;
+}
+.right-side form .password-input-container .icon-password {
+  position: absolute;
+  top: 2rem;
+  left: 2.4rem;
+  color: #323537;
 }
 .right-side form input {
-  padding: 1.6rem 2.4rem;
+  padding: 1.6rem 2.4rem 1.6rem 5.4rem;
   border-radius: 0.8rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
   border: 0.1rem solid #d0d3d7;
   margin-bottom: 3.2rem;
+  width: 100%;
   transition: all 0.4s ease;
 }
 .right-side form input:focus {
