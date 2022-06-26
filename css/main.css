@@ -205,6 +205,12 @@ body {
 .right-side #register-button:hover {
   background-color: #f39d85;
 }
+.right-side .credits {
+  font-size: 1.2rem;
+  color: #88898a;
+  text-align: center;
+  padding-top: 2.4rem;
+}
 
 /* Media queries */
 @media (max-width: 1255px) {

@@ -257,6 +257,13 @@ body {
       background-color: $lightSalmon;
     }
   }
+
+  .credits {
+    font-size: 1.2rem;
+    color: $bodyTextColor;
+    text-align: center;
+    padding-top: 2.4rem;
+  }
 }
 
 /* Media queries */
