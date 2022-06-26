@@ -83,6 +83,7 @@ body {
   padding-top: 2.4rem;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .right-side #sign-up {
   background-color: #fff;
@@ -203,4 +204,85 @@ body {
 }
 .right-side #register-button:hover {
   background-color: #f39d85;
+}
+
+/* Media queries */
+@media (max-width: 1255px) {
+  .left-side {
+    padding: 2rem;
+  }
+  .left-side .cart-illustration {
+    width: 450px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .right-side {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 1000px) {
+  .left-side {
+    padding: 1rem;
+  }
+  .left-side .cart-illustration {
+    width: 300px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .right-side {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    padding: 1rem;
+  }
+  .left-side .cart-illustration {
+    display: none;
+  }
+  .left-side .circle {
+    display: none;
+  }
+  .left-side .img-and-text h1 {
+    text-align: left;
+  }
+
+  .right-side {
+    grid-column: auto;
+  }
+  .right-side h2 {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 58%;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    grid-column: auto;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+  .right-side h2 {
+    display: inline-block;
+  }
+  .right-side .agreement-check span {
+    line-height: 2.4rem;
+  }
 }/*# sourceMappingURL=main.css.map */
