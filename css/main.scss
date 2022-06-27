@@ -25,7 +25,7 @@ $labelTextColor: #9c9ea1;
 
 @mixin socialButton {
   background-color: #fff;
-  padding: 1.4rem 3.2rem;
+  padding: 1.4rem 2.4rem;
   cursor: pointer;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -56,17 +56,12 @@ $labelTextColor: #9c9ea1;
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
 }
 
 body {
   background-color: #ffffff;
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
-}
-
-.page-container {
-  height: 100vh;
 }
 
 .wrapper {
@@ -78,6 +73,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
+
 }
 
 .left-side {
@@ -103,13 +99,6 @@ body {
       width: 500px;
       margin-inline: auto;
     }
-  }
-
-  .circle {
-    width: 240px;
-    position: absolute;
-    left: -80px;
-    bottom: -150px;
   }
 }
 
@@ -315,10 +304,6 @@ body {
       display: none;
     }
 
-    .circle {
-      display: none;
-    }
-
     .img-and-text {
       h1 {
         text-align: left;
@@ -338,7 +323,7 @@ body {
 
 @media (max-width: 650px) {
   html {
-    font-size: 58%;
+    font-size: 55%;
   }
 
   .left-side {
@@ -349,10 +334,14 @@ body {
     grid-column: auto;
     display: flex;
     align-items: flex-start;
-    padding-top: 4rem;
+    padding-top: 3.2rem;
 
     h2 {
       display: inline-block;
+    }
+
+    .sign-up-buttons {
+      flex-direction: column;
     }
 
     .agreement-check {

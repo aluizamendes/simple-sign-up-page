@@ -5,17 +5,12 @@
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
 }
 
 body {
   background-color: #ffffff;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-}
-
-.page-container {
-  height: 100vh;
 }
 
 .wrapper {
@@ -50,12 +45,6 @@ body {
   width: 500px;
   margin-inline: auto;
 }
-.left-side .circle {
-  width: 240px;
-  position: absolute;
-  left: -80px;
-  bottom: -150px;
-}
 
 .right-side {
   display: flex;
@@ -87,7 +76,7 @@ body {
 }
 .right-side #sign-up {
   background-color: #fff;
-  padding: 1.4rem 3.2rem;
+  padding: 1.4rem 2.4rem;
   cursor: pointer;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -256,9 +245,6 @@ body {
   .left-side .cart-illustration {
     display: none;
   }
-  .left-side .circle {
-    display: none;
-  }
   .left-side .img-and-text h1 {
     text-align: left;
   }
@@ -272,7 +258,7 @@ body {
 }
 @media (max-width: 650px) {
   html {
-    font-size: 58%;
+    font-size: 55%;
   }
 
   .left-side {
@@ -283,10 +269,13 @@ body {
     grid-column: auto;
     display: flex;
     align-items: flex-start;
-    padding-top: 4rem;
+    padding-top: 3.2rem;
   }
   .right-side h2 {
     display: inline-block;
+  }
+  .right-side .sign-up-buttons {
+    flex-direction: column;
   }
   .right-side .agreement-check span {
     line-height: 2.4rem;
